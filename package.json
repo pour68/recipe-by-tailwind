@@ -1,0 +1,12 @@
+{
+  "name": "recipe-by-tailwind",
+  "version": "1.0.0",
+  "description": "Recipe web application by tailwindcss framework.",
+  "main": "app.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/app.css -o ./dist/app.css --watch"
+  },
+  "keywords": ["Recipes", "Tailwind project"],
+  "author": "Pouria Nayeb",
+  "license": "ISC"
+}

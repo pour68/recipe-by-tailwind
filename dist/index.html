@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Recipes</title>
+</head>
+
+<body class="text-gray-600 font-body">
+
+    <div class="grid md:grid-cols-5">
+
+        <!-- sidebar -->
+        <aside class="aside col-span-1 md:col-span-1" id="aside">
+            <nav class="flex flex-col items-end gap-4">
+                <div class="flex justify-between w-full">
+                    <h1 class="font-bold uppercase p-4">
+                        <a href="#" class="text-gray-500 hover:text-gray-800">Lux Food</a>
+                    </h1>
+
+                    <div class="p-4 cursor-pointer md:hidden" id="burger">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+
+                <ul class="flex-col items-end gap-3 text-gray-400 hidden px-2 md:px-0 md:flex py-2" id="menu">
+                    <li class="text-gray-900 pr-2 border-r-4 border-primary">
+                        <a href="#">
+                            <span>
+                                Home <i class="ri-home-2-line"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="hover:text-gray-900 pr-2 hover:border-r-4 hover:border-primary">
+                        <a href="#">
+                            <span>
+                                About <i class="ri-question-line"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="hover:text-gray-900 pr-2 hover:border-r-4 hover:border-primary">
+                        <a href="#">
+                            <span>
+                                Contact <i class="ri-question-answer-line"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- /sidebar -->
+
+        <main class="main px-16 py-6 bg-gray-100 col-span-1 md:col-span-4" id="main">
+            <!-- auth -->
+            <nav class="flex justify-center md:justify-end gap-x-2">
+                <a href="#"
+                    class="text-primary btn md:border-2 border-primary hover:bg-primary hover:text-white transition ease-in duration-300">Log
+                    in</a>
+                <a href="#"
+                    class="text-primary btn md:border-2 border-primary hover:bg-primary hover:text-white transition ease-in duration-300">Sign
+                    up</a>
+            </nav>
+            <!-- /auth -->
+
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+                <h3 class="text-xl font-semibold">For luxury people</h3>
+            </header>
+
+            <section>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest recipes</h4>
+
+                <!-- food cards -->
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="card relative hover:shadow-lg">
+                        <figure>
+                            <img src="imgs/stew.jpg" alt="stew" class="w-full h-32 md:h-48 object-cover" />
+                        </figure>
+
+                        <div class="p-4">
+                            <span class="font-bold">5 Bean chili stew</span>
+                            <span class="block text-sm text-gray-500">Recipe by luigi</span>
+                        </div>
+
+                        <div class="badge absolute p-2 top-0 left-0 ml-1 mt-1">
+                            <span>
+                                <i class="ri-time-line"></i> 25 min
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card relative hover:shadow-lg">
+                        <figure>
+                            <img src="imgs/noodles.jpg" alt="noddle" class="w-full h-32 md:h-48 object-cover" />
+                        </figure>
+
+                        <div class="p-4">
+                            <span class="font-bold">Veg Noddle</span>
+                            <span class="block text-sm text-gray-500">Recipe by luigi</span>
+                        </div>
+
+                        <div class="badge absolute p-2 top-0 left-0 ml-1 mt-1">
+                            <span>
+                                <i class="ri-time-line"></i> 25 min
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card relative hover:shadow-lg">
+                        <figure>
+                            <img src="imgs/curry.jpg" alt="curry" class="w-full h-32 md:h-48 object-cover" />
+                        </figure>
+
+                        <div class="p-4">
+                            <span class="font-bold">Tofu Curry</span>
+                            <span class="block text-sm text-gray-500">Recipe by luigi</span>
+                        </div>
+
+                        <div class="badge absolute p-2 top-0 left-0 ml-1 mt-1">
+                            <span>
+                                <i class="ri-time-line"></i> 25 min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /food cards -->
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular</h4>
+
+                <!-- food cards -->
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card relative hover:shadow-lg">
+                        <figure>
+                            <img src="imgs/noodles.jpg" alt="noddle" class="w-full h-32 md:h-48 object-cover" />
+                        </figure>
+
+                        <div class="p-4">
+                            <span class="font-bold">Veg Noddle</span>
+                            <span class="block text-sm text-gray-500">Recipe by luigi</span>
+                        </div>
+
+                        <div class="badge absolute p-2 top-0 left-0 ml-1 mt-1">
+                            <span>
+                                <i class="ri-time-line"></i> 25 min
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card relative hover:shadow-lg">
+                        <figure>
+                            <img src="imgs/stew.jpg" alt="stew" class="w-full h-32 md:h-48 object-cover" />
+                        </figure>
+
+                        <div class="p-4">
+                            <span class="font-bold">5 Bean chili stew</span>
+                            <span class="block text-sm text-gray-500">Recipe by luigi</span>
+                        </div>
+
+                        <div class="badge absolute p-2 top-0 left-0 ml-1 mt-1">
+                            <span>
+                                <i class="ri-time-line"></i> 25 min
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card relative hover:shadow-lg">
+                        <figure>
+                            <img src="imgs/curry.jpg" alt="curry" class="w-full h-32 md:h-48 object-cover" />
+                        </figure>
+
+                        <div class="p-4">
+                            <span class="font-bold">Tofu Curry</span>
+                            <span class="block text-sm text-gray-500">Recipe by luigi</span>
+                        </div>
+
+                        <div class="badge absolute p-2 top-0 left-0 ml-1 mt-1">
+                            <span>
+                                <i class="ri-time-line"></i> 25 min
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /food cards -->
+
+                <br />
+
+                <div class="flex justify-center">
+                    <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">Load more</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
